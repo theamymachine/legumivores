@@ -38,6 +38,7 @@
   display: grid;
   grid-template-areas: "header header header"
   "left main right"
+  "left main right"
   "footer footer footer";
   grid-template-rows: 1fr 4fr 1fr;
   grid-template-columns: 30fr 1fr 30fr;
