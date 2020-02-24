@@ -1,0 +1,457 @@
+/* Colours */
+
+.primary {
+  color: #962C4B;
+}
+
+.warning {
+  color: #e49528;	
+}
+
+.success { 
+  color: rgb(87, 192, 87);
+}
+
+.info {
+  color: rgb(74, 119, 202)
+}
+
+.danger {
+  color: rgb(187, 20, 20)
+}
+
+.dark {
+  color: #302b2b;
+}
+
+.medium {
+  color: #424242;
+}
+
+.light {
+  color: #999999;
+}
+
+/* Grid */
+
+.container {
+  display: grid;
+  grid-template-areas: "header header header"
+  "left main right"
+  "footer footer footer";
+  grid-template-rows: 1fr 4fr 1fr;
+  grid-template-columns: 30fr 1fr 30fr;
+  text-align: center;
+}
+
+.cell-1 {
+  background: deepskyblue;
+  grid-area: header;
+  padding: 3px;
+}
+.cell-2 {
+  background: orangered;
+  grid-area: left;
+  padding: 3px;
+}
+.cell-3 {
+  background: none;
+  grid-area: main;
+  padding: 3px;
+}
+
+.cell-4 {
+  background: limegreen;
+  grid-area: right;
+  padding: 3px;
+}
+
+.cell-5 {
+  background: none;
+  grid-area: main;
+  padding: 3px;
+}
+
+.cell-6 {
+  background: gold;
+  grid-area: footer;
+  padding: 3px;
+  justify-content: center;
+}
+
+.cell {
+  color: #302b2b;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+}
+
+/* Flex boxes */
+
+.color-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+.color-container-for-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+.primary-container {
+  display: flex;
+  align-items: center; 
+  background-color: rgb(87, 192, 87);
+  width: 100px; height: 100px;
+  margin: 3px;
+  padding: 2px;
+}
+.primary-container-outline {
+  display: flex;
+  align-items: center; 
+  color: rgb(87, 192, 87);
+  width: 100px; height: 100px;
+  margin: 3px;
+  padding: 2px;
+}
+
+.text-primary-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #E49528;
+  width: 100px; height: 100px;
+  margin: 3px;
+  padding: 2px;
+} 
+
+.text-primary-container-outline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #E49528;
+  width: 100px; height: 100px;
+  margin: 3px;
+  padding: 2px;
+} 
+
+.beetroot-container {
+  display: flex;
+  align-items: center; 
+  background-color: #962C4B;
+  width: 100px; height: 100px;
+  margin: 3px;
+  padding: 2px;
+}
+
+.beetroot-container-outline {
+  display: flex;
+  align-items: center; 
+  color: #962C4B;
+  width: 100px; height: 100px;
+  margin: 3px;
+  padding: 2px;
+}
+
+/* Fonts */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lora';
+  letter-spacing: 3px;
+  word-spacing: 2.4px;
+}
+
+p {
+  font-family: 'Lato';
+  text-align: justify;
+}
+
+.p-center {
+  text-align: center;
+  word-spacing: 60px;
+}
+
+.lead {
+  font-family: 'Lato';
+  font-variant: small-caps;
+  word-spacing: normal;
+}
+
+blockquote {
+  font-family: 'Lato';
+  font-style: italic;
+  font-size: x-large;
+}
+
+.list-style {
+  font-family: 'Lato';
+  letter-spacing: 3px;
+  word-spacing: 2.4px;
+  font-size: 19px;
+}
+
+.big-font {
+  font-family: 'Lato';
+  font-size: x-large;
+}
+
+/* Buttons */
+.button {
+font-size: 20px; line-height: 16px; padding: 8px; border-radius: 5px; font-family: 'Lato';
+font-weight: normal; 
+text-decoration: none;
+font-variant: small-caps;
+border: none;
+letter-spacing: 2.2px;
+margin-top: 5px;
+padding: 5px;
+justify-content: space-between;
+}
+
+.primary-button {
+    background-color: rgb(150, 44, 75); 
+    color: rgb(250, 245, 247);
+    font-size: 20px; line-height: 16px; padding: 8px; border-radius: 5px; 
+    font-family: 'Lato';
+    font-weight: normal; 
+    text-decoration: none;
+    font-variant: small-caps;
+    border: none;
+    letter-spacing: 2.2px;
+    border: 2px solid   rgb(150, 44, 75);
+
+}
+
+.primary-button:hover {
+  background: rgb(177, 104, 154);
+}
+.primary-button:active {
+  background: rgb(182, 28, 131);
+}
+
+.warning-button {
+  background-color: rgb(189, 110, 8); 
+  color: rgb(247, 244, 240);
+  font-size: 20px; line-height: 16px; padding: 8px; border-radius: 5px; font-family: 'Lato';
+  font-weight: normal; 
+  text-decoration: none;
+  font-variant: small-caps;
+  border: none;
+  letter-spacing: 2.2px;
+  border: 2px solid  rgb(189, 110, 8);
+}
+
+.warning-button:hover {
+background: rgb(212, 149, 65);
+}
+.warning-button:active {
+background: rgb(235, 134, 41);
+}
+
+
+.danger-button {
+  background-color: rgb(187, 20, 20); 
+  color: rgb(243, 236, 234);
+  font-size: 20px; 
+  line-height: 16px; 
+  padding: 8px; 
+  border-radius: 5px; 
+  font-family: 'Lato'; 
+  text-decoration: none;
+  font-variant: small-caps;
+  border: none;
+  letter-spacing: 2.2px;
+  border: 2px solid  rgb(187, 20, 20);
+}
+
+.danger-button:hover {
+background: rgb(218, 69, 69);
+}
+.danger-button:active {
+background: rgb(189, 72, 72);
+}
+
+.success-button {
+  background-color: rgb(87, 155, 32); 
+  color: rgb(241, 239, 235);
+  font-size: 20px; line-height: 16px; padding: 8px; border-radius: 5px; 
+  font-family: 'Lato';
+  font-weight: normal; 
+  text-decoration: none;
+  font-variant: small-caps;
+  border: none;
+  letter-spacing: 2.2px;
+  border: 2px solid rgb(87, 155, 32);
+
+}
+
+.success-button:hover {
+background: rgb(138, 196, 77);
+}
+.success-button:active {
+background: rgb(99, 146, 37);
+}
+
+.info-button {
+  background-color: rgb(74, 119, 202); 
+  color: rgb(250, 245, 247);
+  font-size: 20px; line-height: 16px; padding: 8px; border-radius: 5px; 
+  font-family: 'Lato';
+  font-weight: normal; 
+  text-decoration: none;
+  font-variant: small-caps;
+  border: none;
+  letter-spacing: 2.2px;
+  border: 2px solid   rgb(74, 119, 202);
+
+}
+
+.info-button:hover {
+background: rgb(142, 163, 202);
+}
+.info-button:active {
+background: rgb(182, 28, 131);
+}
+
+
+/* Outline buttons */
+
+.primary-button-outline {
+  background-color: rgb(241, 239, 235);
+  color:  rgb(150, 44, 75);
+  font-size: 20px; line-height: 16px; padding: 8px; border-radius: 5px; 
+  font-family: 'Lato';
+  font-weight: normal; 
+  text-decoration: none;
+  font-variant: small-caps;
+  border: 2px solid   rgb(150, 44, 75);
+  letter-spacing: 2.2px;
+}
+
+.primary-button-outline:hover {
+  background:rgb(177, 104, 154);
+}
+.primary-button-outline:active {
+  background: rgb(177, 104, 154);
+}
+
+.warning-button-outline {
+  background-color: rgb(241, 239, 235);
+  color: rgb(189, 110, 8);
+  font-size: 20px; line-height: 16px; padding: 8px; border-radius: 5px; 
+  font-family: 'Lato';
+  font-weight: normal; 
+  text-decoration: none;
+  font-variant: small-caps;
+  border: 2px solid  rgb(189, 110, 8);
+  letter-spacing: 2.2px;
+}
+
+.warning-button-outline:hover {
+  background:rgb(212, 149, 65);
+}
+.warning-button-outline:active {
+  background: rgb(212, 149, 65);
+}
+
+.danger-button-outline {
+  background-color: rgb(241, 239, 235);
+  color: rgb(187, 20, 20);
+  font-size: 20px; line-height: 16px; padding: 8px; border-radius: 5px; 
+  font-family: 'Lato';
+  font-weight: normal; 
+  text-decoration: none;
+  font-variant: small-caps;
+  border: 2px solid  rgb(187, 20, 20);
+  letter-spacing: 2.2px;
+}
+
+.danger-button-outline:hover {
+  background: rgb(218, 69, 69);
+}
+.danger-button-outline:active {
+  background: rgb(189, 72, 72);
+}
+
+.success-button-outline {
+  background-color: rgb(241, 239, 235);
+  color: rgb(87, 155, 32);
+  font-size: 20px; line-height: 16px; padding: 8px; border-radius: 5px; 
+  font-family: 'Lato';
+  font-weight: normal; 
+  text-decoration: none;
+  font-variant: small-caps;
+  border: 2px solid rgb(87, 155, 32);
+  letter-spacing: 2.2px;
+}
+
+.success-button-outline:hover {
+background: rgb(138, 196, 77);
+}
+.success-button-outline:active {
+background: rgb(99, 146, 37);
+}
+
+.info-button-outline {
+  background-color: rgb(241, 239, 235);
+  color:  rgb(74, 119, 202);
+  font-size: 20px; line-height: 16px; padding: 8px; border-radius: 5px; 
+  font-family: 'Lato';
+  font-weight: normal; 
+  text-decoration: none;
+  font-variant: small-caps;
+  border: 2px solid rgb(74, 119, 202);
+  letter-spacing: 2.2px;
+}
+
+.info-button-outline:hover {
+  background:rgb(76, 131, 235)
+}
+.info-button-outline:active {
+  background: rgb(76, 131, 235);
+}
+
+.big-button{
+  background-color: rgb(241, 239, 235);
+  color: #302b2b;
+  border: 2px solid #302b2b;
+  letter-spacing: 2.2px;
+  font-size: xx-large;
+  line-height: 30px;
+  padding: 10px;
+}
+.big-button-outline:hover {
+  background:rgb(119, 126, 138)
+}
+.big-button-outline:active {
+  background: rgb(119, 126, 138);
+}
+
+.small-button{
+  background-color: rgb(241, 239, 235);
+  color: #302b2b;
+  border: 2px solid #302b2b;
+  letter-spacing: 2.2px;
+  font-size: smaller;
+}
+.small-button-outline:hover {
+  background:rgb(119, 126, 138)
+}
+.small-button-outline:active {
+  background: rgb(119, 126, 138);
+}
+
+/* Iconographie */
+
+/* Formulaires */
+
+/* Listes */
+
+/* Cartes */
