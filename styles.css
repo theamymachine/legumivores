@@ -36,22 +36,20 @@
 
 .container {
   display: grid;
-  grid-template-areas: "header header header"
-  "left main right"
-  "left main right"
-  "footer footer footer";
-  grid-template-rows: 1fr 4fr 1fr;
-  grid-template-columns: 30fr 1fr 30fr;
+  grid-template-areas: "header header"
+  "left right"
+  "left right"
+  "footer footer";
+  grid-template-rows: 1fr 4fr;
+  grid-template-columns: 30fr;
   text-align: center;
 }
 
 .cell-1 {
-  background: deepskyblue;
   grid-area: header;
   padding: 3px;
 }
 .cell-2 {
-  background: orangered;
   grid-area: left;
   padding: 3px;
 }
@@ -62,26 +60,57 @@
 }
 
 .cell-4 {
-  background: limegreen;
   grid-area: right;
   padding: 3px;
 }
 
 .cell-5 {
   background: none;
-  grid-area: main;
+  grid-area: left;
   padding: 3px;
 }
 
 .cell-6 {
-  background: gold;
-  grid-area: footer;
+  grid-area: main;
+  padding: 3px;
+  justify-content: center;
+}
+
+.cell-7 {
+  background: none;
+  grid-area: right;
+  padding: 3px;
+}
+
+.cell-8 {
+  grid-column-start: left;
+  grid-column-end: main;
+  grid-area: left;
+  padding: 3px;
+
+}
+
+.cell-9 {
+  grid-column-start: main;
+  grid-column-end: right;
+  grid-area: main;
+  padding: 3px;
+  justify-content: center;
+}
+
+.cell-10 {
+  grid-area: right;
+  padding: 3px;
+  justify-content: center;
+}
+
+.cell-11 {
+  grid-area: right;
   padding: 3px;
   justify-content: center;
 }
 
 .cell {
-  color: #302b2b;
   text-align: center;
   padding: 5px;
   margin: 5px;
@@ -105,6 +134,65 @@
   margin: 10px;
   padding: 5px;
   text-align: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 500px;
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+  border: 2px solid #999999;
+  border-radius: 4px;
+}
+
+.sign-up-form{
+  border: 2px solid #579b20;
+  border-radius: 4px;
+  font-family: 'Lato';
+  color:  #302b2b;
+  font-size: 20px;
+  margin: 5px;
+  padding: 3px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  flex: 0 1 22%;
+  border-radius: 4px;
+  box-shadow: 2px 2px 7px 1px #999999;
+  margin: 5px;
+  padding: 3px;
+}
+
+.card-image-top {
+  display: block;
+  width: 100%;
+  max-height: 180px;
+  border: 2px solid #c02f2f;
+  border-radius: 4px;
+}
+
+.card-text-body {
+  display: block;
+  width: 97%;
+  max-height: 97%;
+}
+
+list-group{
+  border: 2px solid  #579b20;
+  font-family: 'Lato';
+  letter-spacing: 3px;
+  word-spacing: 2.4px;
+  font-size: 19px;
+  font-weight: lighter;
+  color:  #302b2b;
 }
 
 .primary-container {
@@ -162,16 +250,26 @@
   padding: 2px;
 }
 
+img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 4px;
+
+}
+
+
 /* Fonts */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Lora';
   letter-spacing: 3px;
   word-spacing: 2.4px;
+  color:  #302b2b;
 }
 
 p {
   font-family: 'Lato';
   text-align: justify;
+  color:  #302b2b;
 }
 
 .p-center {
@@ -181,21 +279,42 @@ p {
 
 .lead {
   font-family: 'Lato';
-  font-variant: small-caps;
-  word-spacing: normal;
+  font-size: 16px;
+  font-weight: lighter;
+  word-spacing: 2.4px;
+  letter-spacing: 3px;
 }
 
 blockquote {
   font-family: 'Lato';
   font-style: italic;
   font-size: x-large;
+  font-weight: lighter;
+  color:  #302b2b;
+
 }
 
-.list-style {
+ul {
   font-family: 'Lato';
   letter-spacing: 3px;
   word-spacing: 2.4px;
   font-size: 19px;
+  font-weight: lighter;
+  color:  #302b2b;
+}
+ol {
+  font-family: 'Lato';
+  letter-spacing: 3px;
+  word-spacing: 2.4px;
+  font-size: 19px;
+  font-weight: lighter;
+}
+li {
+  font-family: 'Lato';
+  letter-spacing: 3px;
+  word-spacing: 2.4px;
+  font-size: 19px;
+  font-weight: lighter;
 }
 
 .big-font {
@@ -452,6 +571,8 @@ background: rgb(99, 146, 37);
 /* Iconographie */
 
 /* Formulaires */
+
+
 
 /* Listes */
 

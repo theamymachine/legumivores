@@ -5,25 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Lora|Lato&display=swap" rel="stylesheet">
-
+  <script src="https://kit.fontawesome.com/0894881871.js" crossorigin="anonymous"></script>
   <title>Les Légumivores - UI </title>
 </head>
+
 <body>
   <div class="container">
     <header class="cell cell-1">
       <h1>Kit UI pour les Légumivores</h1>
     </header>
-    <div class="cell cell-2">
 
-  <div class="color-container">
+  <div class="cell cell-2">
+    <div class="color-container-for-buttons">
     <div class="beetroot-container"></div>
     <div class="primary-container"></div>
     <div class="text-primary-container"></div>
   </div>
+
   <div class="color-container">
 
   <div class="big-font beetroot-container-outline">Primary</div> 
+
   <div class="big-font primary-container-outline">Success</div> 
+
   <div class="big-font text-primary-container-outline">Warning</div> 
   </div>
 
@@ -32,47 +36,51 @@
   <p class="big-font light p-center">Light</p>
   <p class="big-font info p-center">Info</p>
   <p class="big-font danger p-center">Danger</p>
-
-
   </div>
+  </div>
+</div>
+
 
   <div class="cell cell-4">
     
-     <div class="color-container-for-buttons">
+    <div class="color-container-for-buttons">
       <p>
       <button class="button primary-button" type="submit">Primary</button>
       <button class="button success-button" type="submit">Success</button>
       <button class="button warning-button" type="submit">Warning</button>
-    </p>
+      </p>
+    </div>
   </div>
+
   <div class="color-container-for-buttons">
-  <p>
+      <p>
       <button class="button danger-button" type="submit">Danger</button>
       <button class="button info-button" type="submit">Info</button>
-  </div>
-    </p>
+      </div>
+      </p>
+
     <div class="color-container-for-buttons">
     <p>
       <button class="button primary-button-outline" type="submit">Primary</button>
       <button class="button success-button-outline" type="submit">Success</button>
       <button class="button warning-button-outline" type="submit">Warning</button>
-    </p>
-    </div>
+      </p>
+      </div>
+
       <div class="color-container-for-buttons">
       <p>
       <button class="button danger-button-outline" type="submit">Danger</button>
       <button class="button info-button-outline" type="submit">Info</button>
-    </p>
-    </div>
+      </p>
+      </div>
 
-  <div class="color-container-for-buttons">
-  <p>
+      <div class="color-container-for-buttons">
+      <p>
       <button class="button big-button" type="submit">Big</button>
       <button class="button small-button" type="submit">Small</button>
-  </div>
-    </p>
-  </div>
-</div>
+      </div>
+      </p>
+    </div>
 
   <div class="cell cell-6">
     <h1>Carotte</h1>
@@ -80,15 +88,99 @@
     <h3>Salade</h3>
     <h4>Tomate</h4>
     <h5>Chou-fleur</h5>
-    <p class ="lead"> Un légume est la plante ou une partie comestible d'une espèce potagère. </p>
-    <p>   Cette définition, reprise par la plupart des dictionnaires de langue française, doit être étendue aux champignons comestibles, dont certains sont cultivés (champignon de Paris, shiitaké, etc.) et à certaines algues, dont la consommation est la plus développée en Extrême-Orient. </p>
-    <blockquote>
-      Il fait bon s'étendre, la tête reposée sur son bras replié, après un frugal repas de légumes, arrosé d'un verre d'eau.
-      <p>Conficius</p>
-    </blockquote>
+      <p class ="lead"> Un légume est la plante ou une partie comestible d'une espèce potagère. </p>
+      <p>   Cette définition, reprise par la plupart des dictionnaires de langue française, doit être étendue aux champignons comestibles, dont certains sont cultivés (champignon de Paris, shiitaké, etc.) et à certaines algues, dont la consommation est la plus développée en Extrême-Orient. </p>
+        <blockquote>
+          "Il fait bon s'étendre, la tête reposée sur son bras replié, après un frugal repas de légumes, arrosé d'un verre d'eau" - Conficius
+        </blockquote>
+          <p class="lead">Raisons pour manger plus de légumes : 
+            <ul>C'est bon !</ul>
+            <ul>C'est sain !</ul>
+            <ul>C'est moins cher !</ul>
+          </p>
+    </div>
+
+<div class="container-second-grid"></div>
+<div class="cell cell-8">
+  <div class="color-container-for-buttons">
+  <p>
+  <i class="fas fa-utensil-spoon primary"></i>Cuillère
+  <i class="fas fa-carrot warning"></i>Carotte
+  <i class="fas fa-apple-alt success"></i>Pomme
+  <i class="fas fa-graduation-cap info"></i>Apprendre
+  <i class="fas fa-pepper-hot danger"></i>Epicé
+  <i class="fas fa-utensil-spoon primary"></i>Cuillère
+  <i class="fas fa-carrot warning"></i>Carotte
+  <i class="fas fa-apple-alt success"></i>Pomme
+  <i class="fas fa-graduation-cap info"></i>Apprendre
+  <i class="fas fa-pepper-hot danger"></i>Epicé
+  <i class="fas fa-utensil-spoon primary"></i>Cuillère
+  <i class="fas fa-carrot warning"></i>Carotte
+  <i class="fas fa-apple-alt success"></i>Pomme
+</p>
+</div>
+</div>
+
+<div class="cell cell-9">
+  <form class="form-container">
+    <h2 class="primary">Inscription</h2>
+    <input class="sign-up-form" type="text" name="name" placeholder="Nom" />
+    <br>
+</textarea><br>
+    <input class="sign-up-form"  type="text" name="email" placeholder="Email" /> <br>
+</textarea><br>
+    <textarea class="sign-up-form" type="text" name="location" placeholder="Ville">
+</textarea>
+    <div class="form-group text-center">
+         <button class="success-button">S'inscrire</button>
+    </div>
+  </form>   
+</div>
+</div>
+
+
+</div>
+
+<div class="cell cell-10">
+<list-group>
+  C'est bon ! <br>
+  C'est sain ! <br>
+  C'est moins cher ! <br>
+</list-group>
+</div>
+
+<div class="cell cell-11">
+  <div class="cards">
+    <div class="card">
+      <div class="image-card-container">
+        <img src="/pumpkin-1768857_960_720.png" alt="autumn">
+      </div>
+      <h5>Autumn recipe</h5>
+      <p p-center> Use carrots and pumpkins to bring out the best in your winter veg !</p>
+    </div>
+
+    <div class="card">
+      <div class="card-text-body">
+        <h2>Want more recipes ?</h2>
+        <p p-center>Follow the button to find out more</p>
+        <button class="primary-button">More recipes</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <p>content</p>
+    </div>
+    <div class="card">
+      <p>content</p>
+    </div>
+    <div class="card">
+      <p>content</p>
+    </div>
   </div>
+</div>
+</div>
 
- 
-
+</div>
 </body>
 </html>
+
